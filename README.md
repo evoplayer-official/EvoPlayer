@@ -31,7 +31,9 @@ Three independent modules — Player, Equalizer, Library — float freely on you
 
 ## 📸 Screenshots
 
-*(coming soon)*
+![EvoPlayer - Music playback](assets/Musica.png)
+
+![EvoPlayer - Video playback](assets/Video.png)
 
 ---
 
