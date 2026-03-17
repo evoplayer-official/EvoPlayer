@@ -29,6 +29,12 @@ Three independent modules — Player, Equalizer, Library — float freely on you
 
 ---
 
+## 🎬 Video
+
+[![EvoPlayer in azione](https://peertube.uno/lazy-static/previews/6C9vPUP28LgAbtGwZYt43T.jpg)](https://peertube.uno/w/6C9vPUP28LgAbtGwZYt43T)
+
+👉 [Guarda il video completo su PeerTube](https://peertube.uno/w/6C9vPUP28LgAbtGwZYt43T)
+
 ## 📸 Screenshots
 
 ![EvoPlayer - Music playback](assets/Musica.png)
