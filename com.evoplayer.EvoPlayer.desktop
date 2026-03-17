@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=EvoPlayer
+Comment=Hi-Fi Audio Player
+Exec=EvoPlayer
+Icon=com.evoplayer.EvoPlayer
+Terminal=false
+Type=Application
+Categories=Audio;Player;

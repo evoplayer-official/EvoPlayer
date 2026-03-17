@@ -1,0 +1,19 @@
+[Application]
+name=com.evoplayer.EvoPlayer
+runtime=org.freedesktop.Platform/x86_64/23.08
+sdk=org.freedesktop.Sdk/x86_64/23.08
+command=EvoPlayer
+
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;
+devices=dri;
+filesystems=home;
+
+[Extension com.evoplayer.EvoPlayer.Debug]
+directory=lib/debug
+autodelete=true
+no-autodownload=true
+
+[Build]
+built-extensions=com.evoplayer.EvoPlayer.Debug;

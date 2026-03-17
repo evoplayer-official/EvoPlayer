@@ -1,0 +1,5 @@
+[Runtime]
+name=com.evoplayer.EvoPlayer.Debug
+
+[ExtensionOf]
+ref=app/com.evoplayer.EvoPlayer/x86_64/master

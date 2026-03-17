@@ -1,0 +1,63 @@
+<svg viewBox="0 0 512 522" xmlns="http://www.w3.org/2000/svg" style="width:320px;height:320px;display:block;margin:auto">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1e2230"/>
+      <stop offset="100%" stop-color="#0a0c12"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D6EEFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#D6EEFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="ledglow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="vgrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c8dff5"/>
+      <stop offset="40%" stop-color="#D6EEFF"/>
+      <stop offset="100%" stop-color="#7ab0d8"/>
+    </linearGradient>
+    <linearGradient id="ograd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D6EEFF"/>
+      <stop offset="100%" stop-color="#5a9abf"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sfondo tondo nero antracite -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" style="stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Bordo esterno sottile LED -->
+  <rect width="512" height="512" rx="112" fill="none" stroke="#D6EEFF" stroke-width="2" stroke-opacity="0.15" style="fill:none;stroke:rgb(214, 238, 255);color:rgb(251, 251, 254);stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Alone centrale -->
+  <ellipse cx="256" cy="270" rx="180" ry="140" fill="url(#glow)" style="stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- V grande — due gambe -->
+  <!-- Gamba sinistra -->
+  <polygon points="80,100 140,100 256,340 196,340" fill="url(#vgrad)" filter="url(#softglow)" style="stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Gamba destra -->
+  <polygon points="432,100 372,100 256,340 316,340" fill="url(#vgrad)" filter="url(#softglow)" style="stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Riflessione sulla V -->
+  <polygon points="80,100 110,100 226,300 196,340" fill="white" fill-opacity="0.06" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <polygon points="432,100 402,100 286,300 316,340" fill="white" fill-opacity="0.04" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Linea LED sul bordo superiore V sinistra -->
+  <line x1="80" y1="100" x2="140" y2="100" stroke="#D6EEFF" stroke-width="2.5" stroke-opacity="0.7" filter="url(#ledglow)" style="fill:rgb(0, 0, 0);stroke:rgb(214, 238, 255);color:rgb(251, 251, 254);stroke-width:2.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="372" y1="100" x2="432" y2="100" stroke="#D6EEFF" stroke-width="2.5" stroke-opacity="0.7" filter="url(#ledglow)" style="fill:rgb(0, 0, 0);stroke:rgb(214, 238, 255);color:rgb(251, 251, 254);stroke-width:2.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- o piccola nell'angolo basso della V -->
+  <!-- Posizionata in fondo alla V, centrata, un po' sovrapposta -->
+  <circle cx="256" cy="388" r="52" fill="#0a0c12" stroke="url(#ograd)" stroke-width="14" filter="url(#softglow)" style="fill:rgb(10, 12, 18);color:rgb(251, 251, 254);stroke-width:14px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Anello LED interno alla o -->
+  <circle cx="256" cy="388" r="52" fill="none" stroke="#D6EEFF" stroke-width="3" stroke-opacity="0.5" filter="url(#ledglow)" style="fill:none;stroke:rgb(214, 238, 255);color:rgb(251, 251, 254);stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Punto luce riflesso sulla o -->
+  <ellipse cx="242" cy="372" rx="12" ry="7" fill="white" fill-opacity="0.18" transform="rotate(-30,242,372)" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Scritta EVO sotto — piccola, elegante -->
+  <text x="256" y="478" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" letter-spacing="12" fill="#D6EEFF" fill-opacity="0.6" style="fill:rgb(214, 238, 255);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Georgia, serif;font-size:28px;font-weight:700;text-anchor:middle;dominant-baseline:auto">EVO</text>
+</svg>

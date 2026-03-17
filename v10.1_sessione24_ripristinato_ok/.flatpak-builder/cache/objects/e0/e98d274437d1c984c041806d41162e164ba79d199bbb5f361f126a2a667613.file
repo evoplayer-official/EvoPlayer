@@ -1,0 +1,36 @@
+{
+  "id" : "com.evoplayer.EvoPlayer",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "23.08",
+  "runtime-commit" : "065c61a337f78034498ad18e2707dacb6852823b150488b9f5c95e1548f70ab5",
+  "sdk" : "org.freedesktop.Sdk",
+  "sdk-commit" : "f7bd662b000ec1a857b81d8fc158295493cc79b7286bae2c99ee357ab7ef17db",
+  "command" : "EvoPlayer",
+  "modules" : [
+    {
+      "name" : "EvoPlayer",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : ".",
+          "type" : "dir"
+        }
+      ],
+      "build-commands" : [
+        "install -Dm755 build/EvoPlayer /app/bin/EvoPlayer",
+        "install -Dm644 assets/evoplayer.png /app/share/icons/hicolor/256x256/apps/com.evoplayer.EvoPlayer.png",
+        "install -Dm644 com.evoplayer.EvoPlayer.desktop /app/share/applications/com.evoplayer.EvoPlayer.desktop"
+      ]
+    }
+  ],
+  "finish-args" : [
+    "--share=ipc",
+    "--socket=x11",
+    "--socket=wayland",
+    "--socket=pulseaudio",
+    "--device=dri",
+    "--filesystem=home",
+    "--share=network"
+  ],
+  "source-date-epoch" : 1773612229
+}
