@@ -84,6 +84,14 @@ See `assets/guida_skin.md` for full documentation.
 
 ---
 
+## ❤️ Support EvoPlayer
+
+If you like EvoPlayer, please consider supporting the project:
+
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/evoplayer-official?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sponsors/evoplayer-official)
+
+---
+
 ## 👤 Author
 
 **Marco** — vision, aesthetics, direction  
