@@ -106,4 +106,4 @@ GNU General Public License v3.0 — see [LICENSE](LICENSE) for details.
 
 ---
 
-*From zero to 13,000 people in one day. The journey continues.*
+*From zero to 27,000 people in 48 hours. The journey continues.*
