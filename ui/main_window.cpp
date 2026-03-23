@@ -583,7 +583,6 @@ void GLWidget::keyPressEvent(QKeyEvent *e) {
         case Qt::Key_F5: {
             qDebug() << "TEST xcb_configure prima:" << window()->pos();
             if (auto* qw = window()->windowHandle()) {
-                void* conn = qw->nativeHandle();
                 // testa con windowHandle position
                 qw->setPosition(100, 100);
                 qDebug() << "TEST xcb_configure dopo:" << window()->pos();

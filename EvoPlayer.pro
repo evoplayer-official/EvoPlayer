@@ -1,4 +1,3 @@
-QT += multimedia
 QT += core gui widgets opengl
 CONFIG += c++17
 TARGET = EvoPlayer
