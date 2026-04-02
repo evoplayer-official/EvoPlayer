@@ -36,6 +36,7 @@ Three independent modules — Player, Equalizer, Library — float freely on you
 👉 [Guarda il video completo su PeerTube](https://peertube.uno/w/6C9vPUP28LgAbtGwZYt43T)
 
 ## 📸 Screenshots
+![EvoPlayer - Music playback](assets/pro.png)
 ![EvoPlayer Reddit Post](assets/NewSkin.png)
 
 ![EvoPlayer - Music playback](assets/Musica.png)
